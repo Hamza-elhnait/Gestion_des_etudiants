@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <br><br>
+        <form action="ajout.php" method="POST">
+            <legend><center>Ajouter un nouveau Etudiant</center></legend>
+                <table style="margin: 0 auto;" >
+                    <tr>
+                        <td>
+                            <label>Matricule : </label>
+                        </td>
+                        <td><input type="text" name="matricule" size="12" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Nom :</label></td>
+                        <td><input type="text" name="nom_etud" size="30" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Prénom :</label></td>
+                        <td><input type="text" name="prenom_etud" size="30" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date de naissance :</label></td>
+                        <td><input type="date" name="date_nais" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Sexe :</label></td>
+                        <td>
+                            <select name="sexe"  class="custom-select">
+                                <option value="M">Masculin</option>
+                                <option value="F">Féminin</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Adresse :</label></td>
+                        <td><input type="texte" name="adresse" size="30" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center><input type="submit" name="submit" value="Enregistrer" class="btn btn-primary">
+                        <input type="reset" value="Effacer"  class="btn btn-danger"></center></td>
+                    </tr>
+                </table>
+        </form>
+        <center><a href="liste_etudiants.php">Revenir à la liste des étuidants </a></center>
+</body>
+</html>
